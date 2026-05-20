@@ -42,7 +42,7 @@ app.use("/api/order", orderRouter)
 app.use("/api/dish", dishRouter)
 app.use("/images", express.static("uploads"))
 
-const server = http.createServer(app); // Создаем http сервер
+const server = http.createServer(app); // http
 
 const io = new Server(server, {
   cors: {
